@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background: #ee6c4d;
+}
+.nav-link {
+  color: #fff;
+}
+.navbar-brand {
+  color: #fff;
+}
+#main {
+  background-image: url("../../image/homepage_revamp/hero-banner.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+#main .content {
+  padding: 40px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: brightness(0.5);
+  width: 100%;
+}
+#main h1 {
+  font-size: 5.5rem;
+  padding-left: 25px;
+  padding-top: 30px;
+  color: #ee6c4d;
+}
+#main p {
+  font-size: 1.4rem;
+  color: #fff;
+  padding-top: 1px;
+  padding-left: 30px;
+}
+
+#journey h1 {
+  /* padding: 10px; */
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.2rem;
+  color: #0d61d3;
+}
+#journey p {
+  font-size: 0.8rem;
+}
+/*section2*/
+#section2 {
+  background: #f7ebe9;
+  padding-bottom: 30px;
+}
+.head1 {
+  margin-top: 40px;
+  color: #0d61d3;
+}
+.head2 {
+  color: #0d61d3;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.para {
+  font-size: 0.9rem;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #707070;
+}
+.img {
+  width: 90%;
+  margin-top: 10%;
+}
+#section3{
+  background: #ECF2FA;
+  padding-bottom: 40px;
+}
+.col{
+  background-image: url("../../image/homepage_revamp/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-content{
+  margin-top: 13%;
+  background: #F7EBE9;
+  padding-top: 13%;
+  padding-left: 30%;
+  padding-bottom: 15px;
+}
+.text-content p{
+  font-size: 0.9rem;
+  color: #707070;
+}
+.circle{
+  height: 150px;
+  width:150px;
+  background: #F7EBE9;
+  border-radius: 100%;
+  position: absolute;
+  top:40px;
+  left: 10px;
+  
+}
+.target-img{
+  width:100%;
+  border-radius:100%;
+}
+#section4{
+  padding-bottom: 60px;
+}
+.heading{
+  /* margin-top: 50px; */
+  color: #0d61d3;
+  font-weight: bold;
+}
+#section4 p{
+  font-size: 0.8rem;
+  color: #707070;
+}
+.btn{
+  background: #0d61d3;
+  width: 150px;
+height: 40px;
+border-radius: 10px;
+color: #fff;
+}
+.btn:hover{
+  border-radius: 0px;
+}
+#section5{
+  background: #F7EBE9;
+}
+.sec-heading{
+  color: #0d61d3;
+  padding-top: 40px;
+}
