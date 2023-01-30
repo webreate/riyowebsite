@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/table.css" />
+    <style>
+      #search {
+        background: #f7ebe9;
+        padding: 5px;
+        border: none;
+        height: 70%;
+        width: 80px;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #searchBar {
+        background: #ecf2fa;
+        height: 70%;
+        padding: 5px;
+        width: 200px;
+      }
+
+      #searchBar:active {
+        border: none;
+      }
+
+      a {
+        color: #ee6c4d;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .menuSection {
+        background: #0d61d3;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .menuSection h2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: #acacac;
+      }
+      .menu {
+        margin-bottom: 5px;
+        color: #acacac;
+      }
+
+      .items a:hover {
+        color: #fff;
+      }
+      .profileSection{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .profileSection img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 15px;
+      }
+      .profileSection h2,h3{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      .dropbtn img{
+        width: 10px;
+        height: 5px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="" />
+      <img src="menu.png" alt="" />
+    </header>
+    <section class="tableSection">
+      <div class="leftSection">
+        <div class="profileSection">
+          <img src="avatar.webp" alt="" />
+          <h2>Name: Sanket Chaudhary</h2>
+          <h3>Unique ID: RJA1</h3>
+        </div>
+        <div class="menuSection">
+          <h2>Business User</h2>
+          <div class="items">
+            <a href="newreg.html" class="menu">New Registration</a>
+            <a href="broker.html" class="menu">Broker</a>
+            <a href="industry.html" class="menu" style="color: #fff">Industry </a>
+            <a href="franchise.html" class="menu">Franchise</a>
+            <a href="rejected.html" class="menu">Rejected</a>
+          </div>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="searchSec">
+        <div class="dropdown">
+          <button class="dropbtn">Service <img src="Group 2624.png" alt=""> </button>
+          <div class="dropdown-content">
+            <a href="#">Broker</a>
+            <a href="#">Industry</a>
+            <a href="#">Franchise</a>
+          </div>
+        </div>
+        <div class="searchBar">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              placeholder="Search by Name"
+              name="search"
+              id="searchBar"
+            />
+            <button type="submit" id="search">Search</button>
+          </form>
+        </div></div>
+        <div class="table">
+          <table id="customers">
+            <tr>
+              <th style="text-align: center">S.No</th>
+              <th style="text-align: center">Date</th>
+              <th style="text-align: center">Unique Id</th>
+              <th style="text-align: center">Name</th>
+              <th style="text-align: center">Mobile No.</th>
+              <th style="text-align: center">Service</th>
+              <th style="text-align: center">Application</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#">View</a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              <div class="loader"></div>
+            </p>
+          </div>
+        
+        </div>
+        <div class="paginationSection">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <!-- <a href="#">1</a> -->
+            <a class="active" href="#">1</a>
+            <!-- <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a> -->
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

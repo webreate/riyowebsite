@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RIYO Parivaar is an all in one package including every facilities including medical to RTO consultancy and from a resting place to hygienic foods."
+    />
+    <title>RIYO- Highway Simplified</title>
+    <link rel="stylesheet" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- SCROLLING EFFECT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- SWIPER LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- ICON's LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- MAIN LINK -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/blogcss.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+      }
+      .video {
+        width: 100vw;
+        height: 100%;
+      }
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .contentBox {
+        color: #707070;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+        text-align: center;
+      }
+      .contentBox span {
+        color: #ee6c4d;
+      }
+      .contentBox h1 {
+        margin-bottom: 20px;
+      }
+
+      .driverSection {
+        height: auto;
+        width: 100vw;
+        background: #ecf2fa;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .driverSection .leftCorner {
+        width: 50%;
+        height: 90%;
+        padding: 20px;
+      }
+      .driverSection .rightCorner {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .driverSection .rightCorner p {
+        line-height: 20px;
+      }
+
+      .driverSection .leftCorner h2 {
+        color: #ee6c4d;
+        font-size: 3rem;
+      }
+      .driverSection .leftCorner p {
+        color: #707070;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .driverSection .leftCorner h3 {
+        color: #0d61d3;
+        margin-top: 20px;
+        width: 79%;
+      }
+
+      .leftCorner li {
+        list-style: circle;
+        margin-left: 15px;
+      }
+      .color {
+        color: #ee6c4d;
+        font-weight: bold;
+      }
+      p {
+        color: #707070;
+      }
+      .mySlides img {
+        width: 90%;
+        height: 100%;
+        border: 1px solid #707070;
+      }
+      .sec {
+        margin-top: 20px;
+        padding: 10px;
+        background: #f7ebe9;
+        width: 150px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+      }
+
+      .slideshow-container {
+        width: 90%;
+        height: 90%;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .slideshow-container .mySlides {
+        display: none;
+        width: 70%;
+        height: 100%;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background: #ee6c4d;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .prev {
+        left: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .dress {
+        width: 100vw;
+        height: 60vh;
+        /* padding: 0 20px; */
+        /* margin-top: 20px; */
+        display: flex;
+        flex-direction: row;
+      }
+      .bg-shadows {
+        height: 85vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0.65;
+        position: absolute;
+      }
+
+      .dress .leftContent {
+        background: #ecf2fa;
+        height: 100%;
+        width: 60%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .dress .rightContent {
+        background: #ecf2fa;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .dress .rightContent img {
+        height: 80%;
+        width: 30%;
+      }
+
+      .tshirt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .dress .leftContent .tshirt img {
+        height: 90%;
+        width: 30%;
+      }
+
+      .problems {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+      }
+
+      .problems h1 {
+        color: #ee6c4d;
+        text-align: center;
+        /* margin-top: 20px; */
+      }
+      .problems video {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+      }
+      .slideshow-problem {
+        width: 98%;
+        height: 85%;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .slideshow-problem .mySlide {
+        display: none;
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .slideshow-problem .mySlide .leftProb {
+        text-align: center;
+        width: 49%;
+      }
+      .slideshow-problem .mySlide .rightProb {
+        width: 49%;
+        text-align: center;
+      }
+      .slideshow-problem .mySlide img {
+        /* display: none; */
+        width: 30%;
+        height: 80%;
+      }
+      /* Next & previous buttons */
+      .prevProb,
+      .nextProb {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 50%;
+        user-select: none;
+        background: #ee6c4d;
+      }
+
+      /* Position the "next button" to the right */
+      .nextProb {
+        right: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .prevProb {
+        left: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prevProb:hover,
+      .nextProb:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .hero-content p {
+        font-size: 4rem;
+      }
+
+      .leftContent span {
+        font-weight: bold;
+      }
+      li {
+        color: #707070;
+      }
+      .barCode {
+        width: 100%;
+        height: 50vh;
+        background: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+      }
+
+      .leftCode {
+        height: 90%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .leftCode img {
+        width: 45%;
+        height: 90%;
+      }
+
+      .rightCode {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightCode h2 {
+        margin-bottom: 10px;
+      }
+
+      .iconsBtn {
+        display: flex;
+        flex-direction: row;
+      }
+      @media screen and (max-width: 780px) {
+        .driverSection {
+          height: auto;
+          width: 100vw;
+          background: #ecf2fa;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .driverSection .leftCorner {
+          width: 100%;
+          height: 90%;
+          padding: 20px;
+        }
+
+        .driverSection .rightCorner {
+          width: 70%;
+          height: 100%;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .driverSection .leftCorner h2{
+          color: #ee6c4d;
+          font-size: 2rem;
+          text-align: center;
+        }
+        .driverSection .leftCorner h3 {
+          color: #0d61d3;
+          margin-top: 20px;
+          width: 79%;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+        .barCode {
+          width: 100%;
+          height: 60vh;
+          background: #f8f8f8;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          align-items: center;
+          padding-top: 20px;
+        }
+        .leftCode {
+          height: 50%;
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .leftCode img {
+          width: 35%;
+          height: 75%;
+        }
+        .rightCode {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px;
+        }
+        .dress {
+          width: 100vw;
+          height: 40vh;
+          /* padding: 0 20px; */
+          /* margin-top: 20px; */
+          display: flex;
+          flex-direction: row;
+        }
+        .dress .rightContent img {
+          height: 60%;
+          width: 30%;
+        }
+        .problems {
+          width: 100vw;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+        }
+        .slideshow-problem {
+          width: 98%;
+          height: 65%;
+          position: relative;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-content p {
+          font-size: 2.3rem;
+        }
+        .hero-content span {
+          color: #fff;
+          width: 70%;
+        }
+        .mySlide h3 {
+          color: #0d61d3;
+          font-size: 1rem;
+        }
+        .hero-section .translate {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          margin-right: 0;
+          margin-top: -60px;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 920px) {
+        .leftCode img {
+          width: 55%;
+          height: 55%;
+        }
+        .dress {
+          width: 100vw;
+          height: 50vh;
+        }
+        .dress .rightContent img {
+          height: 60%;
+          width: 30%;
+        }
+        .problems {
+          width: 100vw;
+          height: 70vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+        }
+        .hero-section .translate {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          margin-right: 0;
+        }
+        .slideshow-problem {
+          width: 98%;
+          height: 70%;
+          position: relative;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 628px) {
+        .mySlide h3 {
+          font-size: 0.9rem;
+        }
+        .mySlide p {
+          color: #707070;
+          font-size: 0.8rem;
+        }
+        .problems h1 {
+          color: #ee6c4d;
+          text-align: center;
+          margin-top: 20px;
+          font-size: 1.3rem;
+        }
+      }
+
+      @media screen and (min-width: 920px) and (max-width: 1100px) {
+        .slideshow-problem .mySlide {
+          display: none;
+          width: 95%;
+          height: 90%;
+        }
+        .problems {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0;
+        }
+        .slideshow-problem {
+          width: 98%;
+          height: 85%;
+          position: relative;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+        }
+        .leftCode img {
+          width: 55%;
+          height: 90%;
+        }
+      }
+      @media screen and (max-width: 458px) {
+        .slideshow-problem .mySlide img {
+          /* display: none; */
+          width: 90%;
+          height: 60%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .hero-content p {
+          color: #ee6c4d;
+          font-size: 1.6rem;
+        }
+        .hero-content span {
+          color: #fff;
+          width: 90%;
+        }
+        .dress .rightContent img {
+          height: 50%;
+          width: 30%;
+        }
+        .dress .leftContent .tshirt img {
+          height: 95%;
+          width: 40%;
+        }
+      }
+      @media screen and (max-width: 350px) {
+        .hero-content p {
+          color: #ee6c4d;
+          font-size: 1.6rem;
+        }
+        .hero-content span {
+          color: #fff;
+          width: 90%;
+        }
+        .rightCode p {
+          text-align: center;
+          font-size: 0.9rem;
+        }
+        .contentBox {
+          color: #707070;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 20px;
+          text-align: center;
+        }
+        .driverSection .leftCorner h2 {
+          color: #ee6c4d;
+          font-size: 1.5rem;
+        }
+        .dress .leftContent {
+          background: #ecf2fa;
+          height: 55%;
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .driverSection p {
+          color: #707070;
+          text-align: center;
+          font-size: 0.9rem;
+        }
+        .dress .rightContent {
+          background: #ecf2fa;
+          height: 40%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          /* align-items: center; */
+        }
+        .dress .rightContent img {
+          height: 90%;
+          width: 20%;
+        }
+        .dress {
+          width: 100vw;
+          height: 60vh;
+          /* padding: 0 20px; */
+          /* margin-top: 20px; */
+          display: flex;
+          flex-direction: column;
+        }
+        .dress .rightContent {
+          background: #ecf2fa;
+          height: 40%;
+          width: 100%;
+        }
+        .dress .leftContent {
+          background: #ecf2fa;
+          height: 55%;
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0PD16VSC5Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0PD16VSC5Q");
+    </script>
+    <!-- Facebook Pixel  -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "853830288938566");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=853830288938566&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- Twitter conversion tracking base code -->
+    <script>
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = "1.1"),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = "https://static.ads-twitter.com/uwt.js"),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, "script");
+      twq("config", "ocnes");
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "853830288938566");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=853830288938566&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <div class="loading" id="loader">
+      <!-- <img src="image/Untitled design.gif" alt="" /> -->
+      <video src="image/logo animate riyo new orange bg.mp4" autoplay muted alt="" />
+
+    </div>
+    <div class="container" id="home">
+      <!-- <div class="bg-shadows"></div> -->
+      <header>
+        <a href="index.html" class="logo">
+          <img src="image/logo.svg" alt="" />
+        </a>
+        <div class="icon bx bx-menu"></div>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <div class="dropMenu">
+            <li><a href="service.html">RIYO Services</a></li>
+            <div class="dropdown">
+              <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
+              <li><a href="#">RIYO Sahayata</a></li>
+              <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
+              <li><a href="#">RIYO Parivahan</a></li>
+              <li><a href="#">RIYO Drivers</a></li>
+            </div>
+          </div>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://rentit.fly.dev/business">RIYO Business</a></li>
+        </ul>
+      </header>
+      <div class="video">
+        <video
+          src="image/headervideo1.mp4"
+          autoplay
+          muted
+          loop
+          class="videoHerosetion"
+        ></video>
+      </div>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h3 style="color: #fff">Join As A Driver</h3>
+          <p style="color: #ee6c4d">RIYO PARIVAAR</p>
+          <span style="color: #fff"
+            >To Make A Change In The Lifestyle On The NHAI And Make Indian
+            Highways A Safer Place To Drive
+          </span>
+        </div>
+        <div class="translate">
+          <!-- <a id="translate-btn" onclick="transalateFun()"> Translate </a> -->
+          <div id="google_translate_element"></div>
+        </div>
+      </section>
+    </div>
+    <section class="contentBox">
+      <p>
+        This project is only for commercial truck drivers who want to drive
+        smoothly on a national highway without feeling uncomfortable because of
+        differences in culture and language in different states. A driver has to
+        deal with numerous issues while transporting goods from one state to
+        another, including language, food preferences, dealing with law
+        enforcement agencies, caring for personnel and truck in the event of an
+        accident, and many others.
+      </p>
+      <br />
+      <p>
+        RIYO Rent It Over India Pvt Ltd is attempting to launch a new policy by
+        the name of the RIYO family, with the goal of modifying the driving
+        conditions for commercial truck drivers. We aim to make some changes to
+        the driving conditions for commercial truck drivers with this policy.
+        They can get all kinds of facilities without going anywhere on the
+        National Highway with all the necessary requirements on the National
+        Highway with a simple click on the RIYO mobile application with the help
+        of an IPFOAD. This feature will assist commercial truck drivers in
+        obtaining solutions to problems encountered daily while driving.
+      </p>
+      <br />
+      <p>
+        We intend to cover all aspects like financial stability, sanitary food,
+        resting places, health care, RTO issue resolution, driving job facility,
+        professional competence, and a track record of consistency in work
+        culture.
+      </p>
+      <br />
+      <p>
+        We intend to make this sector more appealing by making some changes so
+        that people do not feel ashamed in society for working in this sector.
+        RIYO Rent It Over India Pvt Ltd is attempting to bring a slight change
+        in lifestyle for commercial truck drivers on NHAI, and together we can
+        make Indian National Highway a safer place to drive. And this will
+        balance the number of truck operations and drivers who are immutable to
+        operate, significantly impacting freight charges for manufacturers and
+        traders.
+      </p>
+    </section>
+    <section class="driverSection">
+      <div class="leftCorner">
+        <h2>What is RIYO Parivaar</h2>
+        <p>
+          RIYO focuses on developing the best ecosystem for the Indian Drivers
+          to transform it into the most advanced and optimised Highways by
+          providing every facilities including medical to RTO consultancy and
+          from a resting place to hygienic foods. RIYO provides every solution
+          with less casualties. To deliver the best world class Service to every
+          Highway entity.
+        </p>
+        <h3>JOIN US TO MAKE A CHANGE FOR A BETTER HIGHWAY FUTURE AS:</h3>
+
+        <ul>
+          <li>CRANE OWNER</li>
+          <li>AMBULANE</li>
+          <li>RTO AGENT</li>
+          <li>SPARE PART SUPPLIER</li>
+          <li>INSURANCE AGENT</li>
+          <li>DHABA OWNER</li>
+        </ul>
+
+        <div class="sec">
+          <!-- <p>Click to See</p> -->
+          <a href="contact.html"><span class="color">To Know More</span></a>
+        </div>
+      </div>
+
+      <div class="rightCorner">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="image/d1.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d2.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d3.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d4.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d5.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d6.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="image/d7.png" style="width: 100%" />
+          </div>
+
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a> -->
+        </div>
+      </div>
+    </section>
+    <section class="problems">
+      <h2>Life Of A Truck Driver In India</h2>
+      <br />
+      <video
+        src="image/videoplayback (1)_1.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+    <section class="section3">
+      <h2>Elements of RIYO App</h2>
+      <div class="box3">
+        <div class="box3-left">
+          <img src="image/img1.png" alt="" />
+          <h3>RIYO IPFOAD</h3>
+          <p>
+            RIYO IPFOAD are designed to avail every facilities at one point.
+            These points will be available at every 50 km to provide the best
+            experience in a smooth way. IPFOAD Service can be accessed through
+            RIYO IPFOAD for the best food, laundry, accomodation facilities at a
+            very budget-friendly rate to enhance the driver convenience at every
+            Highway all across India. <br /><br />
+            RIYO IPFOAD can be used as a relaxation point for every driver and
+            every facilities can be accessed by using the RIYO App.
+          </p>
+        </div>
+        <div class="box3-right">
+          <img src="image/img2.png" alt="" />
+          <h3>RIYO AGENT</h3>
+          <p>
+            RIYO Agents are available 24*7 to make sure the best service
+            experience and to guide and help every highway entities every
+            service whether a problem or a facility every thing can be solved by
+            our RIYO AGENTS. Our team that is available to you for any needs.
+            Providing the best ever atmosphere and services to help every
+            Highway player. <br />
+            <br />
+            RIYO Agent will take care of every detail and work of the RIYO Point
+            and other Highway assistance to fulfil every needs and to make
+            Highway work flow more smooth and convenient.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="formSection">
+      <div class="translate-img">
+        <div class="bgImg">
+          <img src="image/feedback.png" alt="" id="image" />
+        </div>
+      </div>
+      <div class="suggestion">
+        <form
+        action="https://formspree.io/f/mgebwpzk"
+        method="POST"
+      >
+          <h2 class="mainHeading">Suggestion</h2>
+          <input type="text" placeholder="Name" name="Name"/>
+          <input type="text" placeholder="Mobile Number" name="Number"/>
+          <textarea
+            name="Suggestion"
+            id="suggestion"
+            cols="10"
+            rows="8"
+            placeholder="Suggestion"
+          ></textarea>
+         <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+    <section class="section4">
+      <h2>HOW TO REGISTER</h2>
+      <div class="box4">
+        <div class="inputBox1">
+          <div class="input2">
+            <p class="box-circle">1</p>
+            <span>Download</span>
+            <p id="para">
+              Download the app, available on Play store App Store and the
+              Website
+            </p>
+          </div>
+        </div>
+        <img src="image/arrow.png" alt="" class="line" />
+        <img src="image/arrow2-removebg-preview.png" alt="" class="line1" />
+        <div class="inputBox1">
+          <div class="input2">
+            <p class="box-circle">2</p>
+            <span>Fill up the details</span>
+            <p id="para">
+              Fill up your Personal Information to Verify Your Identity to
+              initiate the process.
+            </p>
+          </div>
+        </div>
+        <img src="image/arrow.png" alt="" class="line" />
+        <img src="image/arrow2-removebg-preview.png" alt="" class="line1" />
+        <div class="inputBox1">
+          <div class="input2">
+            <p class="box-circle">3</p>
+            <span>Subscribe</span>
+            <p id="para">
+              Subscribe any package to get the best Service Across Indian
+              highway.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="barCode">
+      <div class="leftCode">
+        <!-- <img src="image/barcode1.png" alt="" class="codeImg" /> -->
+        <img src="image/newqr1@2x.png" alt="" class="codeImg" />
+      </div>
+      <div class="rightCode">
+        <h2 style="color: #0d61d3">Download RIYO App</h2>
+        <p style="text-align: center">
+          An App To Enhance THE Highway ECO-SYSTEM BY INTEGRATING TECHNOLOGY FOR
+          THE DRIVERS AND MAKE IT MORE EFFICIENT With THE RIYO APP, A PLATFORM
+          WHICH NOT ONLY BRINGS ALL THE ELEMENTS OF THIS SECTOR TOGETHER BUT
+          ALSO HELP THEM IN MAKING EACH OF THEIR DAILY OPERATIONS MORE HASSLE
+          FREE.
+          <br />
+          <br />
+          RIYO HIGHWAY SIMPLIFIED
+        </p>
+        <br />
+        <br />
+        <div class="iconsBtn">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1"
+          >
+            <img src="image/img3.png" alt="" />
+          </a>
+          <!-- <a href="">
+            <img src="image/img4.png" alt="" />
+          </a> -->
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="description">
+        <a href="index.html">
+          <img src="image/logo.svg" alt="" />
+        </a>
+        <p>
+          RIYO is designed to simplify and eliminate every problem faced by
+          every Highway entity in day to day life. RIYO app is an all in one
+          solution for your every Highway needs. Providing a 24*7 service, this
+          app is all about creating a systematic ecosystem for all the concerned
+          parties of the logistics industry for providing them with world class
+          facilities. This app is all about enhancing every Highway experience
+          to make it more safe and secure.
+        </p>
+      </div>
+      <div class="menu">
+        <div class="text-box">
+          <h3 id="span">COMPANY</h3>
+          <ul>
+            <li><a href="index.html" class="home-active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">RIYO Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a href="https://rentit.fly.dev/business">RIYO Business</a>
+            </li>
+          </ul>
+        </div>
+        <div class="otherLinks">
+          <h3 id="span">OTHER LINKS</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
+            <li><a href="riyosahayata.html">RIYO Sahayata</a></li>
+            <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
+            <li><a href="#">RIYO Parivahan</a></li>
+            <li><a href="#">RIYO Drivers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-link">
+        <h2>SOCIAL LINKS</h2>
+        <a href="https://www.instagram.com/riyoindia_/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/helloriyoindia" target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://twitter.com/RiyoIndia" target="_blank"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://wa.me/913348022618" target="_blank"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/rent-it-over-india-private-limited/"
+          target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCr8L5vLgnB-qG58Yq8hp6cA"
+          target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+        <h2 class="padding">DOWNLOAD RIYO APP</h2>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1"
+        >
+          <img src="image/img3.png" alt="" />
+        </a>
+        <a href="">
+          <img src="image/img4.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <!-- SCROLLING EFFECT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/btn.js"></script>
+    <script>
+      var loader = document.getElementById("loader");
+
+      window.addEventListener("load", () => {
+        loader.style.display = "none";
+      });
+      AOS.init({
+        offset: 100,
+        once: false,
+        mirror: false,
+      });
+    </script>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        // let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        // for (i = 0; i < dots.length; i++) {
+        //   dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        slides[slideIndex - 1].style.display = "flex";
+        // dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>
