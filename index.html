@@ -145,6 +145,15 @@
   </head>
 
   <body>
+    <div class="loading" id="loader">
+      <video
+        src="image/logo animate riyo new orange bg.mp4"
+        autoplay
+        muted
+        alt=""
+      />
+      <!-- <img src="image/Untitled design.gif" alt="" /> -->
+    </div>
     <section id="title">
       <nav class="navbar navbar-expand-lg">
         <a href="index.html" class="logo">
@@ -164,19 +173,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Home</a>
+              <a
+                class="nav-link"
+                href="index.html"
+                style="border-bottom: 2px solid #0d61d3"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">RIYO Parivaar</a>
+              <a class="nav-link" href="service.html">RIYO Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">IPFOAD Service</a>
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">RIYO Business</a>
+              <a class="nav-link" href="https://rentit.fly.dev/business"
+                >RIYO Business</a
+              >
             </li>
           </ul>
         </div>
@@ -184,7 +200,7 @@
     </section>
     <section id="main">
       <div class="content">
-        <div class="container">
+        <div class="container py-5">
           <h1>HIGHWAY SIMPLIFIED</h1>
           <p>
             Your Personal Highway Assistance To Make Indian Highway Simplified.
@@ -192,7 +208,7 @@
         </div>
       </div>
     </section>
-    <section id="journey" class="container mt-4">
+    <section id="journey" class="container mt-5">
       <!-- <div class="container"> -->
       <h1>INDIA ON A JOURNEY</h1>
       <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
@@ -295,17 +311,16 @@
               Belongingness On The National Highway.
             </p>
           </div>
-          <div
-            class="col-lg-4"
-           
-          >
+          <div class="col-lg-4">
             <!-- <img
               class="img"
               src="image/homepage_revamp/persorna.png"
               alt=""
               srcset=""
             /> -->
-            <div id="lottie-persona" style="height: 500px; width: 600px"></div>
+            <!-- <div id="lottie-persona" style="height: 500px; width: 600px"></div> -->
+            <lottie-player id="lottie-persona" src="lottie/home/persona.json">
+            </lottie-player>
           </div>
         </div>
       </div>
@@ -361,8 +376,9 @@
               alt=""
               srcset=""
             /> -->
-            <div id="lottie-station" style="height: 600px; width: 800px"></div>
-
+            <!-- <div id="lottie-station" style="height: 600px; width: 800px"></div> -->
+            <lottie-player id="lottie-station" src="lottie/home/station.json">
+            </lottie-player>
           </div>
 
           <div class="col-lg-4">
@@ -387,38 +403,89 @@
     <section id="section5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8"></div>
-
-          <div class="col-lg-4">
-            <h1 class="sec-heading">CEO</h1>
+          <div class="col-lg-6">
+            <h1 class="sec-heading py-5">CEO</h1>
+            <p class="sec-para">
+              After Spending Over 20 Years With Logistics Business, I Feel Very
+              Privileged To Be Writing This Message As The Chief Executive
+              Officer.I Always Did Something That I Was A Little Not Ready To
+              Do. I Think That, That Is How You Grow. Riyo Is Coming From A
+              Place Of Experience And Service To The Logistics Industry. With
+              Riyo We Invite Every One Related To This Industry To Come And Join
+              Us To Grow Your Business Hasselfree
+            </p>
           </div>
+
+          <div class="col-lg-4"></div>
         </div>
       </div>
     </section>
     <section id="section6">
       <!-- <div class="container"> -->
-      <!-- <div class="side-box"></div> -->
+      <div class="side-box"></div>
       <div class="mid-content">
         <h2>Reach Us!</h2>
         <p>
-          RIYO IPFOAD Are Designed To Avail Every Facilities At One Point. These
-          Points Will Be Available At Every 50 Km To Provide The Best Experience
-          In A Smooth Way. IPFOAD Service Can Be Accessed Through RIYO IPFOAD
-          For The Best Food, Laundry, Accomodation Facilities At A Very
-          Budget-Friendly Rate To Enhance The Driver Convenience At Every
-          Highway All Across India.
-          <br /><br />
-          RIYO IPFOAD Can Be Used As A Relaxation Point For Every Driver And
-          Every Facilities Can Be Accessed By Using The RIYO App.
+          ARE YOU STUCK ?
+          <br />
+          <br />
+
+          Feel Free To Reach Us.
+          <br />
+          <br />
+
+          RIYO Is Designed To Fulfil Every Needs On The Highway. Our Aim Is To
+          Bring Out The Best Of Indian Highways And Help To Prevent And Reduce
+          All Highway Problems To Make It More Safe And Smooth For All The
+          Drivers And Other Highway Entities Across India.
+          <br />
+          <br />
+
+          So RIYO Family Is Available 24*7 To Provide The Best Class Support And
+          Assistance To Every Highway Player Out There, For Any Query Or Help,
+          Reach Us And Get The Perfect Solution Of Any Problem Related To Any
+          Logistic Or Highway Problem.
+          <br />
+          <br />
+
+          RIYO- HIGHWAY SIMPLIFIED.
         </p>
       </div>
 
       <div class="right-col">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left">
+          <div class="images">
+            <img
+              class="person1-img"
+              src="./image/homepage_revamp/person1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="img-btn">
+            <button class="btn1">CALL NOW</button>
+            <button class="btn2">WRITE US</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="images">
+            <img
+              class="person2-img"
+              src="./image/homepage_revamp/person2.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="img-btn">
+            <button class="btn1">CALL NOW</button>
+            <button class="btn2">WRITE US</button>
+          </div>
+        </div>
       </div>
     </section>
     <section id="section7" class="d-flex">
+      <lottie-player id="lottie-contactBanner" src="lottie/home/contactBanner.json" >
+      </lottie-player>
       <!-- <div class="lottie-contactBanner"></div> -->
       <div class="container">
         <div class="row align-center">
@@ -563,6 +630,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <!-- SCROLLING EFFECT -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- ICON's JS LINK -->

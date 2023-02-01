@@ -21,7 +21,7 @@ var div1 = document.getElementById("boxRight");
 var div2 = document.getElementById("box5-right2");
 var div3 = document.getElementById("box5-right3");
 
-if(btn1 && btn2 && btn3 && div1 && div2 && div3) {
+if (btn1 && btn2 && btn3 && div1 && div2 && div3) {
   btn1.addEventListener("click", () => {
     btn1.classList.add("active3");
     btn2.classList.remove("active3");
@@ -49,40 +49,45 @@ if(btn1 && btn2 && btn3 && div1 && div2 && div3) {
 }
 
 $(document).ready(function () {
-  bodymovin.loadAnimation({
-    container: document.getElementById("lottie-station"),
-    path: "lottie/home/station.json",
-    renderer: "svg",
+  LottieInteractivity.create({
+    mode: "scroll",
+    player: "#lottie-station",
     loop: false,
-    autoplay: true,
-    name: "Station Animation",
-
-  });
-});
-$(document).ready(function () {
-  bodymovin.loadAnimation({
-    container: document.getElementById("lottie-persona"),
-    path: "lottie/home/persona.json",
-    renderer: "svg",
-    loop: false,
-    autoplay: true,
-    name: "Persona Animation",
     actions: [
       {
-          visibility:[0, 0.2],
-          type: "stop",
-          frames: [0]
+        visibility: [0.25, 1],
+        type: "play",
+        // frames: [0, 100],
       },
+    ],
+  });
+});
+
+
+
+$(document).ready(function () {
+  LottieInteractivity.create({
+    mode: "scroll",
+    player: "#lottie-persona",
+    loop: false,
+    actions: [
       {
-          visibility:[0.2,0.45],
-          type: "seek",
-          frames: [0, 45]
+        visibility: [0.25, 1],
+        type: "playOnce",
       },
+    ],
+  });
+});
+
+$(document).ready(function () {
+  LottieInteractivity.create({
+    mode: "scroll",
+    player: "#lottie-contactBanner",
+    actions: [
       {
-          visibility:[0.45,1.0],
-          type: "loop",
-          frames: [45, 60]
-      }
-  ]
+        visibility: [0.25, 1],
+        type: "playOnce",
+      },
+    ],
   });
 });
