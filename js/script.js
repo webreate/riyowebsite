@@ -56,7 +56,7 @@ $(document).ready(function () {
     actions: [
       {
         visibility: [0.25, 1],
-        type: "play",
+        type: "playOnce",
         // frames: [0, 100],
       },
     ],
@@ -86,7 +86,8 @@ $(document).ready(function () {
     actions: [
       {
         visibility: [0.25, 1],
-        type: "playOnce",
+        type: "loop",
+        frames:[0,100]
       },
     ],
   });
