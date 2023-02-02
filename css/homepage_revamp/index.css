@@ -330,7 +330,6 @@ body {
 
 .mid-content {
   /* height: 200px; */
-  width: 600px;
   z-index: 1;
 }
 .mid-content p {
@@ -571,9 +570,9 @@ label {
   #section6 .right-col {
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
-    /* margin-right: 80px; */
+    align-items: center;
+    justify-content: center; 
+   margin-right: 25px;
   }
   #section6 .right {
     margin-left: 0px;
