@@ -22,18 +22,6 @@
   background-color: var(--primary-color);
   border-radius: 10px;
 }
-@font-face {
-  font-family: "HelvaticaNeue";
-  src: url(../../fonts/HelveticaNeueBdCnObl.ttf);
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "HelvaticaNeue";
-  src: url(../../fonts/HelveticaNeueRegular.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
 
 body {
   overflow-x: hidden;
@@ -87,6 +75,7 @@ body {
 }
 .nav-link {
   color: var(--white-color);
+  font-weight: bold;
 }
 .navbar-brand {
   color: var(--white-color);
@@ -143,10 +132,14 @@ body {
   display: flex;
 }
 #main .content {
-  padding: 40px;
+  padding: 16px;
   -webkit-backdrop-filter: brightness(0.5);
   backdrop-filter: brightness(0.5);
   width: 100%;
+}
+#lottie-hero {
+  max-width: 600px;
+  margin: 0 auto;
 }
 #main h1 {
   font-size: 5.5rem;

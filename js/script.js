@@ -57,15 +57,9 @@ $(document).ready(function () {
       {
         visibility: [0.25, 1],
         type: "playOnce",
-        // frames: [0, 100],
       },
     ],
   });
-});
-
-
-
-$(document).ready(function () {
   LottieInteractivity.create({
     mode: "scroll",
     player: "#lottie-persona",
@@ -77,9 +71,6 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-$(document).ready(function () {
   LottieInteractivity.create({
     mode: "scroll",
     player: "#lottie-contactBanner",
@@ -87,7 +78,7 @@ $(document).ready(function () {
       {
         visibility: [0.25, 1],
         type: "loop",
-        frames:[0,100]
+        frames: [0, 100],
       },
     ],
   });
