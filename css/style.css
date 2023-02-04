@@ -5,9 +5,11 @@
   list-style: none;
   text-decoration: none;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+    Helvetica;
   scroll-behavior: smooth;
 }
+
+
 
 :root {
   --primary-color: #ee6c4d;
@@ -567,7 +569,7 @@ a {
   font-weight: 300;
 }
 
-#para {
+.para {
   font-size: 1rem;
   font-weight: 200;
   text-align: center;
@@ -879,7 +881,7 @@ a {
   padding: 5px;
 }
 
-.menu #span {
+.menu .span {
   color: #505050;
   font-size: 1.3rem;
 }
@@ -1330,7 +1332,7 @@ form {
     font-weight: 400;
   }
 
-  #para {
+  .para {
     font-size: 0.9rem;
     font-weight: 200;
     text-align: center;
@@ -1646,7 +1648,7 @@ form {
     font-size: 1.1rem;
   }
 
-  #para {
+  .para {
     font-size: 0.9rem;
     font-weight: 200;
   }
@@ -2886,6 +2888,7 @@ b {
   display: block;
 }
 
+
 /* DROPDOWN */
 .dropdown {
   display: none;
@@ -3024,9 +3027,6 @@ q {
     justify-content:center;}
 }
 
-.blogScroll img{
-  width: 100%;
-}
 
 #mainLine {
   font-size: 2.5rem;
