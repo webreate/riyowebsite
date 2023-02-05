@@ -243,11 +243,17 @@ body {
 }
 .sec3-main {
   margin-top: 10%;
-  margin-left: 2%;
+  margin-left: 7%;
   background: #f7ebe9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
+  min-width: 50vw;
+  /* -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75); */
+box-shadow: 0 1px 10px 0 rgb(0 0 0 / 20%);
 }
 .target-img {
   width: 50%;
@@ -796,6 +802,8 @@ label {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0px;
+
   }
   .img {
     width: 70%;
