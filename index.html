@@ -28,6 +28,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -189,6 +190,12 @@
                 >RIYO Business</a
               >
             </li>
+            <select name="language">
+              <option class="options" value="" disabled selected hidden>A/अ</option>
+              <!-- <option value="english">A/अ</option> -->
+              <option value="english">English</option>
+              <option value="hindi">हिंदी</option>
+            </select>
           </ul>
         </div>
       </nav>
@@ -604,7 +611,8 @@
                   </div>
                   <div class="mob-num">
                     <label for="mobile number">Mobile No.</label>
-                    <input type="number" placeholder="Your Mobile Number" />
+                    <!-- <input type="tel" placeholder="Your Mobile Number" /> -->
+                    <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name">
                   </div>
                 </div>
                 <div class="mail">
@@ -694,6 +702,9 @@
         <a href="">
           <img src="image/img4.png" alt="" />
         </a>
+        <div class="footer_heading">
+          <h4>Coming Soon...</h4>
+        </div>
       </div>
     </footer>
 
@@ -712,15 +723,18 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
     ></script>
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
       integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
@@ -736,6 +750,7 @@
     <!-- MAIN JS LINK -->
     <script src="libs/modernizr.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/util.js"></script>
     <script>
       var loader = document.getElementById("loader");
 

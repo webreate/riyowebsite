@@ -48,6 +48,11 @@ if (btn1 && btn2 && btn3 && div1 && div2 && div3) {
   });
 }
 
+// $("#mobile_code").intlTelInput({
+// 	initialCountry: "in",
+// 	separateDialCode: true,
+// 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+// })
 $(document).ready(function () {
   LottieInteractivity.create({
     mode: "scroll",
