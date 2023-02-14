@@ -31,7 +31,7 @@ body {
 }
 
 /* HOME PAGE START */
-.container {
+.containerr {
   height: 85vh;
   width: 100%;
   background-image: url(../image/bg-1.jpg);
@@ -63,9 +63,9 @@ header {
   background-color: var(--primary-color);
 }
 
-.logo img {
+/* .logo img {
   height: 50px;
-}
+} */
 
 .icon {
   font-size: 2rem;
@@ -881,7 +881,7 @@ a {
   padding: 5px;
 }
 
-.menu .span {
+.menu #span {
   color: #505050;
   font-size: 1.3rem;
 }
@@ -904,6 +904,9 @@ a {
   font-size: 1.3rem;
   padding-bottom: 10px;
   /* padding: 10px; */
+}
+#span{
+  color: rgb(80, 80, 80);
 }
 
 .social-link a {
@@ -959,6 +962,21 @@ a {
   border-radius: 5px;
   width: 40px;
   text-align: center;
+}
+
+.footer_heading{
+  margin-top: 5px;
+  padding: 4px;
+  color: #fff;
+  height: 19px;
+  background: var(--text-color);
+  width: 23%;
+  position: relative;
+  right: -55%;
+  border-radius: 5px;
+}
+.footer_heading h4{
+  font-size: 0.6rem;
 }
 
 /* Footer end */
@@ -1182,6 +1200,16 @@ form {
 
   .image-title {
     font-size: 1.8rem;
+  }
+  .footer_heading{
+    width: 21%;
+    position: relative;
+    right: -46%;
+    /* right: -84%;
+    top: -54px; */
+  }
+  .footer_heading h4{
+    font-size: 0.3rem;
   }
 }
 
@@ -1420,6 +1448,17 @@ form {
 
   .cerfitcate-right {
     width: 100%;
+  }
+  .footer_heading{
+    margin-top: 4px;
+    padding: 4px;
+    color: #fff;
+    height: 14px;
+    background: var(--text-color);
+    width: 13%;
+    position: relative;
+    right: -54%;
+    border-radius: 5px;
   }
 }
 
@@ -1963,6 +2002,17 @@ form {
   .inside-icon span {
     font-size: 1.1rem;
   }
+  .footer_heading{
+    margin-top: 0px;
+    padding: 4px;
+    color: #fff;
+    height: 14px;
+    background: var(--text-color);
+    width: 14%;
+    position: relative;
+    right: -47%;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2095,6 +2145,18 @@ form {
   .section4 h1 {
     text-align: center;
     font-size: 1.3rem;
+  }
+  .footer_heading{
+
+    margin-top: -6px;
+    padding: 4px;
+    color: #fff;
+    height: 13px;
+    background: var(--text-color);
+    width: 14%;
+    position: relative;
+    right: -39%;
+    border-radius: 5px;
   }
 }
 @media (max-width: 340px) {

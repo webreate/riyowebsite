@@ -26,6 +26,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
@@ -155,51 +157,8 @@
         alt=""
       />
     </div> -->
-    <section id="title">
-      <nav class="navbar navbar-expand-lg">
-        <a href="index.html" class="logo">
-          <img class="logo-img" src="image/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon icon bx bx-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link hLink" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">RIYO Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://rentit.fly.dev/business"
-                >RIYO Business</a
-              >
-            </li>
-            <select name="language">
-              <option class="options" value="" disabled selected hidden>A/अ</option>
-              <!-- <option value="english">A/अ</option> -->
-              <option value="english">English</option>
-              <option value="hindi">हिंदी</option>
-            </select>
-          </ul>
-        </div>
-      </nav>
-    </section>
+    <div id="header"></div>
+
     <section id="main">
       <div class="content">
         <lottie-player id="lottie-hero" src="lottie/home/hero.json" speed="1" autoplay>
@@ -628,85 +587,9 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="description">
-        <a href="index.html">
-          <img src="image/logo.svg" alt="" />
-        </a>
-        <p>
-          RIYO is designed to simplify and eliminate every problem faced by
-          every Highway entity in day to day life. RIYO app is an all in one
-          solution for your every Highway needs. Providing a 24*7 service, this
-          app is all about creating a systematic ecosystem for all the concerned
-          parties of the logistics industry for providing them with world class
-          facilities. This app is all about enhancing every Highway experience
-          to make it more safe and secure.
-        </p>
-      </div>
-      <div class="menu">
-        <div class="text-box">
-          <h3 id="span">COMPANY</h3>
-          <ul>
-            <li><a href="index.html" class="home-active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">RIYO Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li>
-              <a href="https://rentit.fly.dev/business">RIYO Business</a>
-            </li>
-          </ul>
-        </div>
-        <div class="otherLinks">
-          <h3 id="span">OTHER LINKS</h3>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
-            <li><a href="riyosahayata.html">RIYO Sahayata</a></li>
-            <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
-            <li><a href="#">RIYO Parivahan</a></li>
-            <li><a href="#">RIYO Drivers</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="social-link">
-        <h2>SOCIAL LINKS</h2>
-        <a href="https://www.instagram.com/riyoindia_/" target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/helloriyoindia" target="_blank"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://twitter.com/RiyoIndia" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://wa.me/913348022618" target="_blank"
-          ><i class="bx bxl-whatsapp"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/company/rent-it-over-india-private-limited/"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCr8L5vLgnB-qG58Yq8hp6cA"
-          target="_blank"
-          ><i class="bx bxl-youtube"></i
-        ></a>
-        <h2 class="padding">DOWNLOAD RIYO APP</h2>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1"
-        >
-          <img src="image/img3.png" alt="" />
-        </a>
-        <a href="">
-          <img src="image/img4.png" alt="" />
-        </a>
-        <div class="footer_heading">
-          <h4>Coming Soon...</h4>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
+
+
 
     <!-- <iframe
       width="560"
@@ -717,21 +600,23 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe> -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- <script src="/path/to/cdn/jquery.slim.min.js"></script> -->
+    <script src="js/includeHtml.js"></script>
+    
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" type="text/javascript"></script>
     <script
     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
     ></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <!-- https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
@@ -755,7 +640,7 @@
       var loader = document.getElementById("loader");
 
       window.addEventListener("load", () => {
-        loader.style.display = "none";
+        // loader.style.display = "none";
       });
       // Scrollig Effects
 
@@ -765,19 +650,44 @@
         mirror: false,
       });
     </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
-    <script
+    <!-- <script
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script type="text/javascript">
+    ></script> -->
+    <!-- <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-          { pageLanguage: "en" },
+          { includedLanguages : 'en,hi' },
           "google_translate_element"
         );
       }
+      
+    </script> -->
+
+    <script type="text/javascript">
+
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+      }
+      
+      function translateLanguage(lang) {
+        googleTranslateElementInit();
+        var $frame = $('.goog-te-menu-frame:first');
+        if (!$frame.size()) {
+          alert("Error: Could not find Google translate frame.");
+          return false;
+        }
+        $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+        return false;
+      }
+      
+      $(function(){
+        $('.selectpicker').selectpicker();
+      });
     </script>
+    
   </body>
 </html>
 
