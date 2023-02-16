@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+  font-family: "HelvaticaNeue", "Roboto", sans-serif;
+}
 
 .navbar-toggler-icon {
   font-size: 2rem;

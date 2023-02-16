@@ -15,20 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <!-- MAIN LINK -->
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
-
+    
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/blogcss.css" />
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/header.css">
-    <!-- <link rel="stylesheet" href="css/homepage_revamp/index.css" /> -->
-
 
     <style>
       * {
@@ -208,10 +198,28 @@
         text-transform: uppercase;
         font-weight: bold;
       }
-      .logo-img {
-    width: 40%;
-    padding: 10px;
+      @media (max-width:1280px){
+        .navbar {
+    display: -webkit-box;
+    padding: 0rem 1rem;
 }
+.navbar-toggler {
+    display: block;
+  }
+  .navbar.active {
+    top: 0%;
+  }
+  .active img {
+    outline: 0px solid var(--primary-color);
+}
+.logo img {
+    width: 100px;
+    padding-left: 10px;
+}
+.logo-img{
+  padding: 0px;
+}
+      }
       @media (max-width: 1350px) {
         .leftSide {
           width: 70%;
@@ -588,7 +596,9 @@
       />
       <!-- <img src="image/Untitled design.gif" alt="" /> -->
     </div>
-   <div id="header"></div>
+    <div class="container" id="home">
+      <!-- <div class="bg-shadow"></div> -->
+     <div id="header"></div>
       <div class="video blogVideo">
         <video
           src="image/logo animate riyo new.mp4"
@@ -606,6 +616,7 @@
           <div id="google_translate_element"></div>
         </div>
       </section>
+    </div>
     <section class="blog-container">
       <div class="leftSide">
         <div class="col">
@@ -815,6 +826,8 @@
     </section>
     <div id="footer"></div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  
+    <script src="js/includeHtml.js"></script>
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -829,7 +842,6 @@
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
     <script src="js/script.js"></script>
-    <script src="js/includeHtml.js"></script>
   </body>
   <script>
     var loader = document.getElementById("loader");
