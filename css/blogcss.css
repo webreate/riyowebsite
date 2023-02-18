@@ -60,6 +60,11 @@
   justify-content: space-evenly;
   margin: 20px 0;
 }
+div#google_translate_element {
+    /* width: 145px; */
+    color: #fff;
+    font-size: 0.7rem;
+}
 
 .leftBar {
   width: 100%;
@@ -237,7 +242,6 @@ img {
 }
 .suggestion h1 {
   text-transform: uppercase;
-  /* font-family: "Times New Roman", Times, serif; */
 }
 
 form {
@@ -598,13 +602,13 @@ input[type="submit"] {
   margin-left: 20px;
 }
 div#google_translate_element {
-  width: 145px;
+  /* width: 145px; */
   color: #fff;
   font-size: 0.7rem;
 }
 
 .goog-te-gadget {
-  font-family: arial;
+  font-family: "HelvaticaNeue", "Roboto", sans-serif;
   font-size: 11px;
   color: #ee6c4d;
   white-space: nowrap;
@@ -612,9 +616,12 @@ div#google_translate_element {
 
 div#\:0\.targetLanguage {
   height: 30px;
+  position: relative;
 }
 .skiptranslate.goog-te-gadget {
-  color: #fff;
+  /* color: transparent; */
+  position: relative;
+  z-index: 1;
 }
 
 select.goog-te-combo {
@@ -626,16 +633,16 @@ select.goog-te-combo {
   margin: 4px 0;
   height: 40px;
   width: 100%;
-  color: #000;
+  color: #fff;
   padding: 10px;
-  background: #fff;
+  background: #ee6c4d;
 }
 
-div#google_translate_element span {
+ div#google_translate_element span {
   display: none;
 }
 
-option {
+/*option {
   display: none;
 }
 
@@ -647,7 +654,7 @@ option[value="hi"] {
 }
 option[value="en"] {
   display: block;
-}
+} */
 
 .goog-te-banner-frame {
   display: none;

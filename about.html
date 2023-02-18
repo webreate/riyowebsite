@@ -141,27 +141,32 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     <style>
-      @media (max-width:1280px){
-        .navbar {
-    display: -webkit-box;
-    padding: 0rem 1rem;
-}
-.navbar-toggler {
-    display: block;
-  }
-  .navbar.active {
-    top: 0%;
-  }
-  .active img {
-    outline: 0px solid var(--primary-color);
-}
-.logo img {
-    width: 100px;
-    padding-left: 10px;
-}
-.logo-img{
-  padding: 0px;
-}
+   
+     
+     @media (max-width:1280px){
+              .navbar {
+          display: -webkit-box;
+          padding: 0rem 1rem;
+      }
+      .navbar-toggler {
+          display: block;
+        }
+        .navbar.active {
+          top: 0%;
+        }
+        .active img {
+          outline: 0px solid var(--primary-color);
+          border-radius: 0%;
+          /* position: absolute;
+          left: 10px; */
+        }
+      .logo img {
+          width: 100px;
+          padding-left: 10px;
+      }
+      .logo-img{
+        padding: 0px;
+      }
       }
     </style>
   </head>
@@ -202,10 +207,6 @@
       <div class="main">
         <h1>About Us</h1>
         <p>Rent It Over India Pvt. Ltd. Your Personal Highway Assistance.</p>
-        <div class="translate">
-          <!-- <a id="translate-btn" onclick="transalateFun()"> Translate </a> -->
-          <div id="google_translate_element"></div>
-        </div>
       </div>
     </div>
     <div class="div1">
@@ -456,15 +457,5 @@
         mirror: false,
       });
     </script>
-    
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
-      </script>
   </body>
 </html>

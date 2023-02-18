@@ -6,10 +6,10 @@
 $(document).ready(function () {
   // Responsive navbar
 
-  $(document).on("click", ".icon", ()=>{
-    $('.icon').toggleClass("bx-x");
-    $('.navbar').toggleClass("active");
-  })
+  $(document).on("click", ".icon", () => {
+    $(".icon").toggleClass("bx-x");
+    $(".navbar").toggleClass("active");
+  });
 
   var btn1 = document.getElementById("btn1");
   var btn2 = document.getElementById("btn2");
@@ -44,37 +44,39 @@ $(document).ready(function () {
       div3.style.display = "flex";
     });
   }
-  LottieInteractivity.create({
-    mode: "scroll",
-    player: "#lottie-station",
-    loop: false,
-    actions: [
-      {
-        visibility: [0.25, 1],
-        type: "playOnce",
-      },
-    ],
-  });
-  LottieInteractivity.create({
-    mode: "scroll",
-    player: "#lottie-persona",
-    loop: false,
-    actions: [
-      {
-        visibility: [0.25, 1],
-        type: "playOnce",
-      },
-    ],
-  });
-  LottieInteractivity.create({
-    mode: "scroll",
-    player: "#lottie-contactBanner",
-    actions: [
-      {
-        visibility: [0.25, 1],
-        type: "loop",
-        frames: [0, 100],
-      },
-    ],
-  });
+  if (window?.LottieInteractivity) {
+    LottieInteractivity.create({
+      mode: "scroll",
+      player: "#lottie-station",
+      loop: false,
+      actions: [
+        {
+          visibility: [0.25, 1],
+          type: "playOnce",
+        },
+      ],
+    });
+    LottieInteractivity.create({
+      mode: "scroll",
+      player: "#lottie-persona",
+      loop: false,
+      actions: [
+        {
+          visibility: [0.25, 1],
+          type: "playOnce",
+        },
+      ],
+    });
+    LottieInteractivity.create({
+      mode: "scroll",
+      player: "#lottie-contactBanner",
+      actions: [
+        {
+          visibility: [0.25, 1],
+          type: "loop",
+          frames: [0, 100],
+        },
+      ],
+    });
+  }
 });
