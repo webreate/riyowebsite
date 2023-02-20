@@ -28,10 +28,36 @@
 body {
   overflow-x: hidden;
 }
+.aboutUs-ios-wrapper {
+  display: inline-flex;
+  position: relative;
+  left: 10px;
+}
 
+.aboutUs-ios-wrapper__overlay {
+  position: absolute;
+  width: 110%;
+  height: 90%;
+  top: 13px;
+  left: -7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs-ios-wrapper__tag{
+  color: #fff;
+  background: var(--text-color);
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+.aboutUs-ios-wrapper__tag p {
+  margin: 0;
+}
 /* HOME PAGE START */
 .containerr {
-  height: 85vh;
+ min-height:100vh;
   width: 100%;
   background-image: url(../image/bg-1.jpg);
   background-size: cover;
@@ -42,7 +68,7 @@ body {
 }
 
 .bg-shadow {
-  height: 85vh;
+  min-height: 100vh;
   width: 100%;
   background-color: black;
   opacity: 0.65;
@@ -830,11 +856,11 @@ a {
   font-size: 2.2rem;
 }
 
-.box7-right p {
+/* .box7-right p {
   padding: 15px;
   font-size: 1.2rem;
   display: none;
-}
+} */
 
 .box7-right span {
   margin-top: 50px;
