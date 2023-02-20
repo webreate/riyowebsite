@@ -26,15 +26,20 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/homepage_revamp/index.css" />
+    <link rel="stylesheet" href="css/footer.css">
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -154,45 +159,8 @@
         alt=""
       />
     </div> -->
-    <section id="title">
-      <nav class="navbar navbar-expand-lg">
-        <a href="index.html" class="logo">
-          <img class="logo-img" src="image/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon icon bx bx-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link hLink" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">RIYO Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://rentit.fly.dev/business"
-                >RIYO Business</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
+    <div id="header"></div>
+
     <section id="main">
       <div class="content">
         <lottie-player id="lottie-hero" src="lottie/home/hero.json" speed="1" autoplay>
@@ -267,9 +235,9 @@
       <!-- </div> -->
     </section>
     <section id="section2">
-      <div class="container-fluid">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-lg-8 d-flex align-items-center justify-content-center">
+      <div class="container-fluid sec2-contain">
+        <!-- <div class="row d-flex align-items-center justify-content-center"> -->
+          <!-- <div class="col-lg-5 d-flex align-items-center justify-content-center"> -->
             <div class="sec2-content">
               <h4
                 class="head1"
@@ -285,7 +253,7 @@
                 data-aos-delay="400"
                 data-aos-duration="700"
               >
-                Introducing "Sarthi".
+                Introducing "Saarthi".
               </h2>
               <p
                 class="para"
@@ -309,8 +277,8 @@
                 Hope And Belongingness On The National Highway.
               </p>
             </div>
-          </div>
-          <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <!-- </div> -->
+          <div class="sec2-img">
             <!-- <img
               class="img"
               src="image/homepage_revamp/persorna.png"
@@ -326,7 +294,7 @@
     </section>
     <section id="section3">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-flex justify-content-between">
           <div class="sec3-main col-lg-6">
             <div class="sec2-part1">
               <img
@@ -361,42 +329,7 @@
               </p>
             </div>
           </div>
-          <!-- <div class=" col-lg-8">
-            <div class="text-content1">
-                <img
-                  class="target-img"
-                  src="image/homepage_revamp/aim.png"
-                  alt=""
-                  srcset=""
-                />
-                <p class="target-p">Aim</p>
-              </div>
-              <div class="text-content2">
-                <p class="textCon-p">
-                  <span style="font-size: 1rem;">RIYO RENTITOVER INDIA PVT LTD </span> Aims To Be A Part Of This Historic
-                  Journey Along With The Country. At Riyo, We Aim To Develop An
-                  Ecosystem Which Not Only Caters To All The Participants Of The
-                  Logistics Industry But Also Brings Them Together On One Single
-                  Platform Where They Can Get Solutions To Every Industry-Related
-                  Problem.
-                  <br /><br>
-                  Riyo Aims To Become The Perfect Highway Buddy Which Not Only
-                  Facilitates Daily Logistics Processes But Also Provides Its
-                  Users With Almost Every Assistance And Facility With A Single
-                  Click Of A Button On Their Smartphones. Gone Are Those Days When
-                  Working In The Industry Was Nothing Less Than A Nightmare. With
-                  The Riyo Mobile App, You Can Carry Out Every Logistics-Related
-                  Operation With The Ease Of Your Office Or House. Doesn’t Matter
-                  How Are You Related To The Industry, If You Are An Owner Of A
-                  Manufacturing Unit Or You Own A Lorry Fleet, You Are A Lorry
-                  Supplier Or You Drive A Truck Yourself, Riyo Has Something For
-                  Everyone Making All Your Daily Work Hassle-Free.
-                </p>
-
-              </div>
-            </div>
-          </div> -->
-          <div class="col col-lg-4 d-flex align-items-center">
+          <div class="col col-lg-5">
             <img
               class="img"
               src="image/homepage_revamp/map.png"
@@ -445,15 +378,15 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="sec-heading py-5">CEO</h1>
+            <h1 class="sec-heading py-5">Message From CEO</h1>
             <p class="sec-para">
-              After Spending Over 20 Years With Logistics Business, I Feel Very
+              "After Spending Over 20 Years With Logistics Business, I Feel Very
               Privileged To Be Writing This Message As The Chief Executive
               Officer.I Always Did Something That I Was A Little Not Ready To
               Do. I Think That, That Is How You Grow. Riyo Is Coming From A
               Place Of Experience And Service To The Logistics Industry. With
               Riyo We Invite Every One Related To This Industry To Come And Join
-              Us To Grow Your Business Hasselfree
+              Us To Grow Your Business Hasselfree"
             </p>
           </div>
 
@@ -515,65 +448,6 @@
             </div>
           </div>
         </div>
-      <!-- <div class="side-box"></div>
-      <div class="mid-content">
-        <h2>Reach Us!</h2>
-        <p>
-          ARE YOU STUCK ?
-          <br />
-          <br />
-
-          Feel Free To Reach Us.
-          <br />
-          <br />
-
-          RIYO Is Designed To Fulfil Every Needs On The Highway. Our Aim Is To
-          Bring Out The Best Of Indian Highways And Help To Prevent And Reduce
-          All Highway Problems To Make It More Safe And Smooth For All The
-          Drivers And Other Highway Entities Across India.
-          <br />
-          <br />
-
-          So RIYO Family Is Available 24*7 To Provide The Best Class Support And
-          Assistance To Every Highway Player Out There, For Any Query Or Help,
-          Reach Us And Get The Perfect Solution Of Any Problem Related To Any
-          Logistic Or Highway Problem.
-          <br />
-          <br />
-
-          RIYO- HIGHWAY SIMPLIFIED.
-        </p>
-      </div>
-
-      <div class="right-col">
-        <div class="left">
-          <div class="images">
-            <img
-              class="person1-img"
-              src="./image/homepage_revamp/person1.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="img-btn">
-            <button class="btn1">CALL NOW</button>
-            <button class="btn2">WRITE US</button>
-          </div>
-        </div>
-        <div class="right">
-          <div class="images">
-            <img
-              class="person2-img"
-              src="./image/homepage_revamp/person2.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="img-btn">
-            <button class="btn1">CALL NOW</button>
-            <button class="btn2">WRITE US</button>
-          </div>
-        </div> -->
       </div>
     </section>
     <section id="section7" class="d-flex">
@@ -604,7 +478,8 @@
                   </div>
                   <div class="mob-num">
                     <label for="mobile number">Mobile No.</label>
-                    <input type="number" placeholder="Your Mobile Number" />
+                    <!-- <input type="tel" placeholder="Your Mobile Number" /> -->
+                    <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name">
                   </div>
                 </div>
                 <div class="mail">
@@ -620,82 +495,9 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="description">
-        <a href="index.html">
-          <img src="image/logo.svg" alt="" />
-        </a>
-        <p>
-          RIYO is designed to simplify and eliminate every problem faced by
-          every Highway entity in day to day life. RIYO app is an all in one
-          solution for your every Highway needs. Providing a 24*7 service, this
-          app is all about creating a systematic ecosystem for all the concerned
-          parties of the logistics industry for providing them with world class
-          facilities. This app is all about enhancing every Highway experience
-          to make it more safe and secure.
-        </p>
-      </div>
-      <div class="menu">
-        <div class="text-box">
-          <h3 id="span">COMPANY</h3>
-          <ul>
-            <li><a href="index.html" class="home-active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">RIYO Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li>
-              <a href="https://rentit.fly.dev/business">RIYO Business</a>
-            </li>
-          </ul>
-        </div>
-        <div class="otherLinks">
-          <h3 id="span">OTHER LINKS</h3>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="riyoparivaar.html">RIYO Parivaar</a></li>
-            <li><a href="riyosahayata.html">RIYO Sahayata</a></li>
-            <li><a href="riyosuraksha.html">RIYO Suraksha</a></li>
-            <li><a href="#">RIYO Parivahan</a></li>
-            <li><a href="#">RIYO Drivers</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="social-link">
-        <h2>SOCIAL LINKS</h2>
-        <a href="https://www.instagram.com/riyoindia_/" target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/helloriyoindia" target="_blank"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://twitter.com/RiyoIndia" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://wa.me/913348022618" target="_blank"
-          ><i class="bx bxl-whatsapp"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/company/rent-it-over-india-private-limited/"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCr8L5vLgnB-qG58Yq8hp6cA"
-          target="_blank"
-          ><i class="bx bxl-youtube"></i
-        ></a>
-        <h2 class="padding">DOWNLOAD RIYO APP</h2>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.riyo.RIYO&pli=1"
-        >
-          <img src="image/img3.png" alt="" />
-        </a>
-        <a href="">
-          <img src="image/img4.png" alt="" />
-        </a>
-      </div>
-    </footer>
+    <div id="footer"></div>
+
+
 
     <!-- <iframe
       width="560"
@@ -706,21 +508,26 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe> -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- <script src="/path/to/cdn/jquery.slim.min.js"></script> -->
+    <script src="js/includeHtml.js"></script>
+    
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" type="text/javascript"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
     ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
       integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
@@ -736,11 +543,12 @@
     <!-- MAIN JS LINK -->
     <script src="libs/modernizr.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/util.js"></script>
     <script>
       var loader = document.getElementById("loader");
 
       window.addEventListener("load", () => {
-        loader.style.display = "none";
+        // loader.style.display = "none";
       });
       // Scrollig Effects
 
@@ -750,19 +558,12 @@
         mirror: false,
       });
     </script>
+    <!-- <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script> -->
+    
 
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      }
-    </script>
+      
+
+    
   </body>
 </html>
 

@@ -1,0 +1,144 @@
+body {
+  overflow-x: hidden;
+  font-family: "HelvaticaNeue", "Roboto", sans-serif;
+}
+
+.navbar-toggler-icon {
+  font-size: 2rem;
+  height: auto;
+  color: var(--white-color);
+}
+.navbar {
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+.nav-link {
+  color: var(--white-color);
+  font-weight: bold;
+}
+.navbar-brand {
+  color: var(--white-color);
+}
+.logo-img {
+  width: 40%;
+  padding: 10px;
+}
+.navbar-nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+.navbar-nav a:active {
+  color: var(--text-color);
+  /* padding-top: -10px; */
+}
+.hLink {
+  border-bottom: 2px solid var(--text-color);
+  /* padding-top: 20px; */
+  /* padding-top: 13px; */
+}
+
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+.navbar-nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+select{
+  /* width: 100px; */
+  border: none;
+  padding: 10px;
+
+  /* padding-left: 20px; */
+  /* background-color: var(--primary-color); */
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
+/* select::after{
+  content: "";
+  height: 20px;
+  background:red;
+} */
+/* .options{
+  padding: 10px;
+} */
+div#google_translate_element {
+  /* width: 145px; */
+  color: #fff;
+  font-size: 0.7rem;
+}
+.skiptranslate.goog-te-gadget {
+  /* color: transparent; */
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1280px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+  }
+  .hLink {
+    border-bottom: none;
+  }
+  .navbar-nav a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ee6c4d;
+  }
+  .navbar-nav.active {
+    top: 100%;
+  }
+  .navbar.active {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(20%, #ee6c4d),
+      color-stop(20%, #fff)
+    );
+    background-image: -o-linear-gradient(#ee6c4d 20%, #fff 20%);
+    background-image: linear-gradient(#ee6c4d 20%, #fff 20%);
+  }
+}
