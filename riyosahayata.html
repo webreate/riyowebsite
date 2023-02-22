@@ -414,6 +414,66 @@
         display: flex;
         flex-direction: row;
       }
+      @media (max-width: 1280px) {
+        .navbar {
+          display: -webkit-box;
+          padding: 0rem 1rem;
+          /* display: flex; */
+        }
+        .navbar-toggler {
+          display: block;
+          background: transparent;
+          border: none;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+        .navbar.active {
+          top: 0%;
+          display: flex;
+          flex-direction: column;
+        }
+        .active img {
+          outline: 0px solid var(--primary-color);
+          border-radius: 0%;
+          /* position: absolute;
+          left: 10px; */
+        }
+        .logo img {
+          width: 100px;
+          padding-left: 10px;
+        }
+        .logo-img {
+          padding: 0px;
+        }
+        .navbar-nav {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          text-align: center;
+          gap: 1rem;
+          flex-direction: column;
+          /* padding-top: 40px; */
+        }
+        .navbar-nav.active {
+          display: flex;
+          flex-direction: column;
+        }
+        select {
+          width: 100px;
+          border: none;
+          padding: 10px;
+          /* padding-left: 20px; */
+          background-color: var(--primary-color);
+          border-radius: 10px;
+          outline: none;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        .navbar a{
+          display: flex;
+        }
+      }
       @media screen and (max-width: 780px) {
         .driverSection {
           height: auto;
