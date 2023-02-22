@@ -1,4 +1,7 @@
-
+body {
+  overflow-x: hidden;
+  font-family: "HelvaticaNeue", "Roboto", sans-serif;
+}
 .footer {
   width: 100%;
   background-color: var(--primary-color);
