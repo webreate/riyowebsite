@@ -20,6 +20,8 @@ body {
   font-size: 2rem;
   height: auto;
   color: var(--white-color);
+  /* width: 0em; */
+  /* width: 1em; */
 }
 .navbar {
   background-color: var(--primary-color);

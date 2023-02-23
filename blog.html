@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog</title>
-  <link rel="stylesheet" />
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
-  <!-- SCROLLING EFFECT -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- ICON's LINK -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-  <!-- MAIN LINK -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
-    rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- SCROLLING EFFECT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ICON's LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- MAIN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blogcss.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/blogcss.css" />
@@ -349,7 +363,188 @@
       }
     }
 
-    /* @media (max-width: 1350px) {
+      .box-icon {
+        color: #ee6c4d;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        overflow: hidden;
+        width: 70%;
+      }
+      .panel span {
+        margin-right: 20px;
+      }
+
+      /* pagination */
+      .center {
+        text-align: center;
+      }
+
+      .pagination {
+        display: inline-block;
+      }
+
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+      }
+
+      .pagination a.active {
+        background-color: #0d61d3;
+        color: white;
+        border: 1px solid #0d61d3;
+      }
+
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+
+      #downIcon {
+        display: none;
+        color: #ee6c4d;
+      }
+
+      .blogName {
+        color: #0d61d3;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      @media (max-width: 1280px) {
+        .navbar {
+          display: -webkit-box;
+          padding: 0rem 1rem;
+          /* display: flex; */
+        }
+        .navbar-toggler {
+          display: block;
+          background: transparent;
+          border: none;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+        .navbar.active {
+          top: 0%;
+          display: flex;
+          flex-direction: column;
+        }
+        .active img {
+          outline: 0px solid var(--primary-color);
+          border-radius: 0%;
+          /* position: absolute;
+          left: 10px; */
+        }
+        .logo img {
+          width: 100px;
+          padding-left: 10px;
+        }
+        .logo-img {
+          padding: 0px;
+        }
+        .navbar-nav {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          text-align: center;
+          gap: 1rem;
+          flex-direction: column;
+          /* padding-top: 40px; */
+        }
+        .navbar-nav.active {
+          display: flex;
+          flex-direction: column;
+        }
+        select {
+          width: 100px;
+          border: none;
+          padding: 10px;
+          /* padding-left: 20px; */
+          background-color: var(--primary-color);
+          border-radius: 10px;
+          outline: none;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        .navbar a {
+          display: flex;
+        }
+        .translate {
+          margin-left: 20px;
+          margin-top: 60px;
+        }
+      }
+      @media (max-width: 1350px) {
+        .col {
+          width: 90%;
+          height: 25%;
+          display: grid;
+          flex-direction: row;
+          /* justify-content: space-between; */
+          /* align-items: stretch; */
+          /* margin: 2% 0; */
+          gap: 12px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .blog {
+          width: 100%;
+          height: 100%;
+          /* padding: 2%; */
+        }
+        .rightSide {
+          width: 25%;
+          height: 120vh;
+          background: #ecf2fa;
+        }
+
+        .rightSide h2 {
+          text-transform: uppercase;
+          margin-top: -150px;
+          display: flex;
+          justify-content: center;
+          font-size: 1rem;
+        }
+        .accordion {
+          color: #ee6c4d;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 13px;
+          transition: 0.4s;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          /* justify-content: end; */
+          margin-right: 0;
+        }
+
+        /* .list {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+        } */
+        .list {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          /* align-items: flex-end; */
+        }
+      }
+
+      /* @media (max-width: 1350px) {
         .leftSide {
           width: 70%;
           display: flex;
@@ -614,38 +809,18 @@
         background-image: none;
       } */
 
-    .video {
-      width: 100vw;
-      min-height: 100vh;
-      margin-top: 3%;
-    }
-
-    video {
-      height: 106%;
-      width: 100%;
-      object-fit: cover;
-      margin-top: -21px;
-    }
-
-    .hero-content h1 {
-      color: #ee6c4d;
-    }
-
-    @media screen and (max-width: 730px) {
-      .blogVideo {
-        margin-top: 10%;
-      }
-    }
-
-    @media screen and (max-width: 680px) {
-      .blogVideo {
-        margin-top: 15%;
+      .video {
+        width: 100vw;
+        /* min-height: 100vh; */
+        margin-top: 3%;
       }
 
-      .hero-content {
-        height: 20%;
+      video {
+        height: 103%;
+        width: 100%;
+        object-fit: cover;
+        margin-top: -21px;
       }
-    }
 
     @media screen and (max-width: 300px) {
       .hero-content {
