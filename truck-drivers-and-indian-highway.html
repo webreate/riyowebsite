@@ -441,7 +441,7 @@
           <textarea name="suggestion" id="suggestion" cols="10" rows="8" placeholder="Suggestion"></textarea>
           <!-- <input type="submit" value="Submit" id="suggestion" /> -->
         </form>
-      <button class="form-btn" id="suggestion">Submit</button>
+      <button class="form-btn" id="suggestionForm">Submit</button>
       </div>
     </section>
    <div id="footer"></div>
@@ -449,7 +449,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>
     $(document).ready(function () {
-      $("#suggestion").click(function () {
+      $("#suggestionForm").click(function () {
         console.log("IN API");
         const suggestion = new Object();
         suggestion.name = $('#name').val();

@@ -273,12 +273,12 @@ div#google_translate_element {
   width: 100%;
   transform: scaleX(-1) rotate3d(-2, 2, 4, 35deg);
 }
-.sec2-img {
+/* .sec2-img { */
   /* background: green;
   height: 400px;
   width: 600px; */
   /* padding-top: 7rem; */
-}
+/* } */
 /* #lottie-persona{
   position: absolute;
   z-index: 1;
@@ -288,14 +288,14 @@ div#google_translate_element {
   background: #ecf2fa;
   /* min-height: 100vh; */
 }
-.col {
+/* .col { */
   /* background-image: url(../../image/homepage_revamp/map.png); */
   /* background-size: cover;
   background-repeat: no-repeat; */
   /* width: 100%; */
   /* background-size: cover;
   background-repeat: no-repeat; */
-}
+/* } */
 .sec3-main {
   margin-top: 10%;
   margin-left: 7%;
