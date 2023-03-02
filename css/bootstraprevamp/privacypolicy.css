@@ -1,0 +1,41 @@
+.parallax {
+  background-image: url("/image/bootstrap-images/bg-1.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  color: #ee6c4d;
+  display: flex;
+  justify-content: center;
+  padding-top: 19%;
+  font-size: 4rem;
+}
+.section-1 {
+  background-color: #ecf2fa;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-1 b {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  font-size: 2rem;
+  color: #ee6c4d;
+  padding-top: 35px;
+}
+.section-1 p {
+  text-align: center;
+  font-size: 1.3rem;
+}

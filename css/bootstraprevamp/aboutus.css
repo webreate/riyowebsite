@@ -1,0 +1,80 @@
+.parallax {
+  background-image: url("/image/bootstrap-images/bg-1.jpg");
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 210px;
+}
+.main h1 {
+  color: #ee6c4d;
+  font-size: 70px;
+}
+.main p {
+  color: #ffffff;
+  font-size: 30px;
+}
+/********section-2********/
+.section-2 {
+  text-align: center;
+}
+.section-2 h1 {
+  color: #ee6d4e;
+  font-family: HelvaticaNeue;
+  font-size: 32px;
+}
+/* section-3 */
+.section-3 .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.section-3 .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 img {
+  margin-top: -70px;
+  height: 18%;
+  width: 18%;
+}
+.section-3 .card-body {
+  background-color: #f7ebe9;
+}
+
+.section-3 .card-title {
+  text-align: center;
+}
+
+/* section-4 */
+.section-4 {
+  text-align: center;
+  padding-top: 50px;
+}
+.section-4 h2 {
+  text-align: center;
+  font-size: 2.2 rem;
+  color: #0d61d3;
+  padding: 20px 50px;
+}
+.section-4 p {
+  text-align: center;
+  padding: 15px 200px;
+}
+.section-4 h3 {
+  text-align: center;
+  padding: 40px 200px;
+}
