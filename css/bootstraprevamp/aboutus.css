@@ -44,15 +44,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f7ebe9;
+  padding: 20px;
+  text-align: center;
 }
 
 .section-3 img {
   margin-top: -70px;
   height: 18%;
   width: 18%;
-}
-.section-3 .card-body {
-  background-color: #f7ebe9;
 }
 
 .section-3 .card-title {
