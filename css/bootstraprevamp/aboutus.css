@@ -1,10 +1,12 @@
 .parallax {
-  background-image: url("/image/bootstrap-images/bg-1.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(66, 65, 65, 0)),
+    url("/image/bootstrap-images/bg-1.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  backdrop-filter: brightness(0.5);
 }
 
 .main {
@@ -12,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 210px;
+  padding: 215px;
 }
 .main h1 {
   color: #ee6c4d;
@@ -31,7 +33,7 @@
 /********section-2********/
 .section-2 {
   text-align: center;
-  height: 80vh;
+  height: 100vh;
 }
 .section-2 h1 {
   color: #ee6d4e;
