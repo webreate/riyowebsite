@@ -400,7 +400,7 @@ input {
 .mob-num {
   width: 50%;
 }
-label {
+.label {
   display: inline-block;
   margin-bottom: 0.5rem;
   font-weight: bold;
