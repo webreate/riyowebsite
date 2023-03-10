@@ -56,13 +56,39 @@
   font-family: HelvaticaNeue;
   font-size: 40px;
   line-height: 60px;
+  font-weight: 500;
 }
 
 .section-2 .contactus {
   display: flex;
   flex-direction: column;
 }
+.inside-icon i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+.inside-icon {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+}
+i.bx.bxl-gmail {
+  padding-right: 10px;
+}
 
+i.bx.bx-phone {
+  padding-right: 10px;
+}
+
+a {
+  color: #505050;
+  font-family: HelvaticaNeue;
+  font-size: 20.8px;
+  line-height: 31.2px;
+  text-decoration: none;
+}
 .section-2 .form-box {
   backdrop-filter: blur(1px);
   background: rgba(255, 255, 255, 0.5);
@@ -98,6 +124,17 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  margin-right: -12px;
+  color: #ee6c4d;
+}
+
+.connect {
+  width: 38%;
+}
+input[type="text"]::placeholder {
+  font-family: HelvaticaNeue;
+  font-size: 13px;
+  line-height: 24px;
   color: #ee6c4d;
 }
 .form-name {
@@ -114,6 +151,7 @@
   background-color: #f7ebe9;
   color: #ee6c4d;
 }
+
 /* .label {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -121,6 +159,11 @@
 } */
 .btn .btn-primary {
   width: 60%;
+  margin-top: 10px;
+}
+.btn-primary {
+  margin-top: 10px;
+  width: 200px;
 }
 
 /* section-4 */
@@ -152,11 +195,16 @@
   padding: 40px 200px;
 }
 
+img.google-playstore {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
 /* Flip-section */
-.flip-section body {
+.container-fluid.flip-section {
   /* padding-top: 50px; */
   /* color: #555; */
-  background-attachment: #ffffff;
+  background-color: #f7f6f6;
 }
 
 .flip {
