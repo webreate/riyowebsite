@@ -80,3 +80,41 @@ $(document).ready(function () {
     });
   }
 });
+
+var lottie_first = document.getElementById('lottie_first')
+var loaderr = bodymovin.loadAnimation({
+  container: lottie_first, // required
+  path: 'lottie/hero.json',
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  name: "Demo Animation",
+});
+
+var lottie_sec = document.getElementById('image1')
+var lotti = bodymovin.loadAnimation({
+  container: lottie_sec, // required
+  path: 'lottie/persona.json',
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  name: "Demo Animation",
+});
+var lottie_third = document.getElementById('image2')
+var lotti = bodymovin.loadAnimation({
+  container: lottie_third, // required
+  path: 'lottie/station.json',
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  name: "Demo Animation",
+});
+var lottie_fourth = document.getElementById('image3')
+var lotti = bodymovin.loadAnimation({
+  container: lottie_fourth, // required
+  path: 'lottie/contactBanner.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  name: "Demo Animation",
+});
