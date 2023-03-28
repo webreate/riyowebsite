@@ -47,17 +47,6 @@ $(document).ready(function () {
   if (window?.LottieInteractivity) {
     LottieInteractivity.create({
       mode: "scroll",
-      player: "#lottie-station",
-      loop: false,
-      actions: [
-        {
-          visibility: [0.25, 1],
-          type: "playOnce",
-        },
-      ],
-    });
-    LottieInteractivity.create({
-      mode: "scroll",
       player: "#lottie-persona",
       loop: false,
       actions: [
@@ -69,12 +58,12 @@ $(document).ready(function () {
     });
     LottieInteractivity.create({
       mode: "scroll",
-      player: "#lottie-contactBanner",
+      player: "#lottie-station",
+      loop: false,
       actions: [
         {
           visibility: [0.25, 1],
-          type: "loop",
-          frames: [0, 100],
+          type: "playOnce",
         },
       ],
     });
@@ -90,25 +79,6 @@ var loaderr = bodymovin.loadAnimation({
   autoplay: true,
   name: "Demo Animation",
 });
-
-var lottie_sec = document.getElementById('image1')
-var lotti = bodymovin.loadAnimation({
-  container: lottie_sec, // required
-  path: 'lottie/persona.json',
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  name: "Demo Animation",
-});
-var lottie_third = document.getElementById('image2')
-var lotti = bodymovin.loadAnimation({
-  container: lottie_third, // required
-  path: 'lottie/station.json',
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  name: "Demo Animation",
-});
 var lottie_fourth = document.getElementById('image3')
 var lotti = bodymovin.loadAnimation({
   container: lottie_fourth, // required
@@ -117,4 +87,13 @@ var lotti = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   name: "Demo Animation",
+});
+
+
+// Scrollig Effects
+
+AOS.init({
+  offset: 100,
+  once: false,
+  mirror: false,
 });

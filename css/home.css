@@ -92,7 +92,7 @@
 }
 
 .section-2 p {
-  line-height: 31px;
+  line-height: 30px;
   color: #707070;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -117,7 +117,7 @@
   background-color: #f7ebe9;
   overflow: hidden;
 }
-div#image1 {
+div#lottie-persona {
     margin-top: 137px;
     width: 121%;
 }
@@ -323,7 +323,7 @@ div#image2 {
 }
 
 .section-5 p {
-  font-family: HelvaticaNeue;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   color: #707070;
   line-height: 24px;
@@ -335,10 +335,6 @@ div#image2 {
   font-weight: 500;
   color: #0d61d3;
   line-height: 38.4px;
-}
-
-.section-5 .btn-primary {
-  width: 30%;
 }
 
 /* Section-6 */
@@ -612,7 +608,11 @@ label {
 
 /* ******************Responsive***************** */
 
-
+@media (max-width:1200px) {
+  .col-xs-12.col-sm-6.section5_box2 {
+    padding-left: 125px;
+}
+}
 @media (max-width:1100px) {
  .section3 .box {
     width: 119%;
@@ -667,6 +667,9 @@ img.imgs {
 .section3 h2 {
   margin-bottom: 0;
   font-size: 4.3vw;
+}
+.col-xs-12.col-sm-6.section5_box2 {
+  padding-left: 79px;
 }
 }
 @media (max-width:800px) {
@@ -731,6 +734,19 @@ img.imgs {
 .section-7 .section7_right_box h2 {
   font-size: 43px;
 }
+.section-5 {
+  height: fit-content;
+}
+.section5_box1{
+  width: 100%;
+}
+.section5_box_left {
+  width: 100%;
+}
+.col-xs-12.col-sm-6.section5_box2 {
+  padding-left: 0;
+  width: 100%;
+}
 }
 @media (max-width:760px) {
   .container.section3 {
@@ -753,7 +769,7 @@ img.imgs {
 .section3 p {
   font-size: 17px;
 }
-div#image1 {
+div#lottie-persona {
   margin-top: 0;
 }
 .section-8 .form-box {

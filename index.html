@@ -8,8 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!-- Link for scrolling effet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/headers.css" />
   <link rel="stylesheet" href="css/footer.css" />
 
@@ -22,6 +23,8 @@
   <div class="container-fluid parallax">
     <div class="blank-line"></div>
     <div class="lottie_first" id="lottie_first"></div>
+    <!-- <lottie-player id="lottie-hero" src="lottie/hero.json" speed="1" autoplay >
+    </lottie-player> -->
   </div>
   </div>
 
@@ -29,7 +32,7 @@
 
   <div class="container-fluid section-2">
     <h1>INDIA ON A JOURNEY</h1>
-    <p>
+    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
       India! A country on a journey to become the world leader in
       Manufacturing and export. Currently, at 3 trillion US dollars, India’s
       GDP is estimated to become 3rd largest in the world by the end of this
@@ -39,18 +42,18 @@
       its output. India’s logistics infrastructure comprises of three major
       ways of transport
     </p>
-    <ol>
+    <ol data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
       <li>The Roadways</li>
       <li>The Waterways</li>
       <li>The Airways</li>
     </ol>
-    <p>
+    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
       all three have come a long way in recent years, but there is still a
       long way to go to reach the level of developed countries. the future of
       India's logistics infrastructure looks promising, with the government
       and private sector working together to improve the sector's performance.
     </p>
-    <p>
+    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
       A major challenge facing India's logistics infrastructure is a lack of
       standardisatio . The country's logistics sector is highly fragmented,
       with many small and medium-sized enterprises operating in the space.
@@ -62,8 +65,8 @@
       cooperation between differentactors. This makes it difficult to manage
       logistics activities and results in inefficiencies in the supply chain.
     </p>
-    <h3>ROADWAYS OF INDIA.</h3>
-    <p>
+    <h3 data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">ROADWAYS OF INDIA.</h3>
+    <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
       Roadways play a crucial role in a country's development as they are the
       backbone of a country's transportation system. They provide the means
       for people and goods to move around, which is essential for economic
@@ -85,9 +88,9 @@
 
       <div class="col-xs-12 col-sm-6">
         <div class="box box1">
-          <h4>A Familiar Face On The Highway,</h4>
-          <h2>Introducing "Saarthi".</h2>
-          <p>
+          <h4 data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">A Familiar Face On The Highway,</h4>
+          <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">Introducing "Saarthi".</h2>
+          <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
             Whenever We Are In Need Of Help, We Long To See A Familiar Face.
             Knowing That Someone Is Around To Help You In Every Situation Gives Us
             The Confidence To Go Ahead With Our Job. One Such Face Is Of Mr
@@ -107,7 +110,9 @@
 
       <div class="col-xs-12 col-sm-6">
         <div class="box lottie1_box">
-          <div class="image" id="image1"></div>
+          <!-- <div class="image" id="image1" data-aos="fade-up" data-aos-delay="800" data-aos-duration="700"></div> -->
+          <lottie-player id="lottie-persona" src="lottie/persona.json">
+          </lottie-player>
         </div>
       </div>
 
@@ -160,11 +165,13 @@
     </div>
   </div>
   <!-- Section-5 -->
-  <!-- <div class="container section-5 ">
+  <div class="container section-5 ">
     <div class="row">
       <div class="col-xs-12 col-sm-6 section5_box1">
         <div class="box section5_box_left">
-          <div class="image2" id="image2"></div>
+          <!-- <div class="image2" id="image2"></div> -->
+          <lottie-player id="lottie-station" src="lottie/station.json">
+          </lottie-player>
         </div>
       </div>
 
@@ -186,7 +193,7 @@
       </div>
 
     </div>
-  </div> -->
+  </div>
 
   <!-- Section-6 -->
   <div class="container section-6">
@@ -313,7 +320,6 @@
         name: "Demo Animation",
       });
     </script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -324,12 +330,14 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
-  <script src="/js/includeHtml.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
     integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Js link for scrolling effect -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script src="/js/includeHtml.js"></script>
   <script src="/js/script.js"></script>
 </body>
 

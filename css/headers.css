@@ -21,7 +21,7 @@
 
 .navbar {
     --bs-navbar-padding-y: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .bg-light {
