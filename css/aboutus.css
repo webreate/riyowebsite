@@ -1141,8 +1141,180 @@ input[type=submit] {
   z-index: 2;
 }
 .blogContainer .main h1 {
-  font-size: 103px;
+  color: #fff;
+  font-size: 84px;
   font-weight: 700;
+  margin-top: 163px;
+}
+
+.blogContainer2{
+  width: 100%;
+  /* height: fit-content; */
+  display: flex;
+}
+.blogContainer2_left{
+  width: 75%;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+.blogContainer2_left .blogCard{
+  padding: 15px;
+  background-color: #f7ebe9;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 383px;
+}
+.upper_blog{
+  height: 50%;
+}
+.lower_blog{
+  height: 50%;
+}
+.blogContainer2_left .blogCard h2{
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.blogContainer2_left .blogCard p{
+  font-size: .95rem;
+  color: #000;
+}
+.blogContainer2_left .blogCard img{
+  width: 100%;
+  height: 100%;
+}
+.blogContainer2_right{
+  width: 25%;
+  background-color:#ecf2fa;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+#logos1{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  opacity: .5;
+  width: -webkit-fill-available;
+  padding-left: 78px;
+}
+.blogContainer2_right h2{
+ z-index: 1;
+ position: relative;
+}
+.blogContainer2_right select{
+ z-index: 1;
+ position: relative;
+ padding: 10px;
+ background-color: transparent;
+}
+.blogContainer2_right select option{
+  background-color: transparent;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 95%;
+  margin: 10px;
+  padding: 5px 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+.dropdown-wrapper span {
+  font-size: 1.3rem;
+}
+.dropdown-wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent;
+}
+.dropdown-wrapper.is-active {
+  border-radius: 5px 5px 0 0;
+  background: var(--primary-color);
+  box-shadow: none;
+  border-bottom: none;
+  color: white;
+}
+.dropdown-wrapper.is-active:after {
+  border-color: #ffffff transparent;
+  transform: rotate(180deg);
+}
+.dropdown-wrapper.is-active .dropdown-list {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.dropdown-wrapper.is-active .dropdown-list ::-webkit-scrollbar {
+  width: 2px;
+}
+.dropdown-wrapper.is-active .dropdown-list ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.dropdown-list {
+  /* Size & position */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  /* Styles */
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  transition: all 0.3s ease-out;
+  /* Hiding */
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 0;
+}
+.dropdown-list li {
+  padding: 0 10px;
+}
+.dropdown-list li a img{
+  width: 66px;
+}
+.dropdown-list li a h2{
+  font-size: .9rem;
+  color: #0d61d3;
+}
+.dropdown-list li:hover a {
+  color: var(--primary-color);
+}
+.dropdown-list li:last-of-type a {
+  border: none;
+}
+.dropdown-list a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #e6e8ea;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  text-align: left;
 }
 
 /* ****************************BLOG PAGE END*************************************** */
@@ -1197,6 +1369,12 @@ input[type=submit] {
   line-height: 40.8px;
   width: 98%;
 }
+.blog-Video {
+  padding-top: 49px;
+}
+.blogContainer .main {
+  padding-left: 10px;
+}
 
 }
 @media (max-width:850px) {
@@ -1245,6 +1423,25 @@ input[type=submit] {
   width: 48%;
   padding: 0;
 }
+.blogContainer2 {
+  flex-direction: column;
+}
+.blogContainer2_left {
+  width: 100%;
+}
+.blogContainer2_right {
+  width: 100%;
+}
+#logos1{
+  display: none;
+}
+.dropdown-wrapper {
+  width: 98%;
+}
+.blogContainer .main h1 {
+  font-size: 52px;
+  margin-top: 0;
+}
 }
 @media (max-width:700px) {
   .container7 .box4 {
@@ -1261,6 +1458,10 @@ input[type=submit] {
   display: block;
   width: 124px;
   height: 90px;
+}
+.main {
+  justify-content: flex-start;
+  margin-top: 129px;
 }
 }
 @media (max-width:600px) {
