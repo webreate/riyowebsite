@@ -6,6 +6,7 @@ body {
   --text-color: #0d61d3;
   --white-color: #fff;
 }
+
 .footer {
   width: 100%;
   background-color: var(--primary-color);
@@ -232,6 +233,15 @@ body {
     right: -54%;
     border-radius: 5px;
   }
+  .menu {
+    width: 40%;
+}
+}
+@media (max-width:750px) {
+  .menu {
+    width: 100%;
+    flex-direction: column;
+}
 }
 
 @media (max-width: 480px) {

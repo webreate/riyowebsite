@@ -150,11 +150,6 @@
   margin-top: 80px;
 }
 
-@media screen and (max-width: 680px) {
-  .contentBox {
-    margin-top: 120px;
-  }
-}
 .iconsBox {
   width: 80%;
   display: none;
@@ -333,3 +328,50 @@ q {
   flex-direction: column;
 }
 
+
+
+/* Responsive */
+
+@media (max-width:750px) {
+  .c h2 {
+    font-size: 1.5rem;
+}
+.contentBox button {
+  padding: 7px;
+  width: 138px;
+}
+}
+@media (max-width:600px) {
+  .slider {
+    flex-direction: column;
+}
+.sec1, .sec2,.sec3 {
+  height: 100%;
+  width: 100%;
+}
+.slide.sec1:hover, .slide.sec2:hover, .slide.sec3:hover {
+  width: 100%;
+}
+.slide.sec1:hover .contentBox, .slide.sec2:hover .contentBox, .slide.sec3:hover .contentBox{
+  margin-top: 81px;
+}
+.contentBox {
+  margin-top: 10px;
+}
+.c {
+  height: fit-content;
+}
+.c p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.c h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.contentBox button {
+  padding: 5px;
+  width: 123px;
+  font-size: .9rem;
+}
+}

@@ -99,16 +99,29 @@ AOS.init({
 });
 
 
-const dd = document.querySelector('#dropdown-wrapper');
-const links = document.querySelectorAll('.dropdown-list a');
-const span = document.querySelector('span');
+// const dd = document.querySelector('#dropdown-wrapper');
+// const links = document.querySelectorAll('.dropdown-list a');
+// const span = document.querySelector('span');
 
-dd.addEventListener('click', function() {
-  this.classList.toggle('is-active');
+// dd.addEventListener('click', function() {
+//   this.classList.toggle('is-active');
+// });
+
+// links.forEach((element) => {
+//   element.addEventListener('click', function(evt) {
+//     span.innerHTML = evt.currentTarget.textContent;
+//   })
+// })
+$(".but").click (function(){
+  // Close all open windows
+  $(".hide_box").stop().slideUp(300); 
+  // Toggle this window open/close
+  $(this).next(".hide_box").stop().slideToggle(300);
+  //hitter test// 
+  $(".hitter").show()
 });
 
-links.forEach((element) => {
-  element.addEventListener('click', function(evt) {
-    span.innerHTML = evt.currentTarget.textContent;
-  })
-})
+$(".hitter").click (function(){
+  // Close all open windows
+  $(".hide_box").stop().slideUp(300); 
+});

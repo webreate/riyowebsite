@@ -7,6 +7,15 @@
 ::-webkit-scrollbar {
     width: 8px;
 }
+body > .skiptranslate {
+    display: none;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
