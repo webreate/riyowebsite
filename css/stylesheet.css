@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Times New Roman cry;
+    src: url(/fonts/times_new_roman.ttf) ;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: Times New bold Roman cry;
+    src: url(/fonts/times_new_roman_bold.ttf) ;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4{
+    font-family: Times New bold Roman cry !important;
+}
+
+p{
+    font-family: Times New Roman cry !important ;
+}
+
+a{
+    font-family: Times New Roman cry !important ;
+}
