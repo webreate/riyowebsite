@@ -11,6 +11,7 @@ Disallow: /second-helper/
 Disallow: /third-helper/
 Disallow: /riyo/suraksha/
 Disallow: /riyo/paarivar/
+Disallow: /sitemap.xml
 
 
 Allow: /index
