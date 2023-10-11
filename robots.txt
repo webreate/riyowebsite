@@ -1,0 +1,26 @@
+User-agent: * 
+Disallow: /admin/
+Disallow: /brokerList
+Disallow: /industryList
+Disallow: /franchiseList
+Disallow: /rejected
+Disallow: /admin/
+Disallow: /assist-job/
+Disallow: /first-helper/
+Disallow: /second-helper/
+Disallow: /third-helper/
+Disallow: /riyo/suraksha/
+Disallow: /riyo/paarivar/
+Disallow: /sitemap.xml
+
+
+Allow: /index
+Allow: /aboutus
+Allow: /riyoservices
+Allow: /blog
+Allow: /riyoparivaar
+Allow: /contactus
+Allow: /riyosahayata
+Allow: /riyosuraksha
+Allow: /Privacypolicy
+Allow: /riyobusiness
